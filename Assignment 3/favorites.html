@@ -8,10 +8,33 @@
 <body>
 
   <form>
+      <fieldset>
+    <legend>Favorite Movie Survey</legend>
+        <label>Your Name:</label>
+    <input type="text" name="name" placeholder="e.g. Jane Doe">
+
+    <label>Email Address:</label>
+    <input type="email" name="email" placeholder="e.g. jane@doe.com">
   <label>Submit Your Favorite Movie:</label>
   <input type="text" name="favorite-movie" placeholder="Type your favorite movie here">
+    <label>Favorite Genre:</label> <!-- Dropdown label -->
+    <select name="genre">
+      <option value="classic">Horror</option>
+      <option value="fantasy">Fantasy</option>
+      <option value="sci-fi">Sci-Fi</option>
+      <option value="romance">RomCom</option>
+    </select>
+       <p>Preferred Format:</p>
+      <label><input type="radio" name="format" value="DVD"> DVD</label>
+      <label><input type="radio" name="format" value="Streaming"> Streaming</label>
+      <label><input type="radio" name="format" value="Theater"> Theater</label>
 
+    <label>
+      <input type="checkbox" name="subscribe" value="yes">
+      Subscribe to our monthly movie club newsletter
+    </label>
   <button type="submit">Submit</button>
+    </fieldset>
 </form>
 
 </body>
@@ -21,6 +44,7 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="info.html">Info</a></li>
+    <li><a href="favorites.html">Favorites</a></li>
 </ul>
 </nav>
 </html>

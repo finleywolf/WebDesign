@@ -23,6 +23,7 @@ text-align: center;
 margin-bottom: 10px;
 box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 background-image: linear-gradient(to right, #f0f0f0, #e0e0e0);
+opacity: 0.7
 }
 
 nav {
@@ -68,7 +69,7 @@ footer {
 
 img {
     display: block;
-    max-width: 100%;
+    max-width: 60%;
     margin: 0 auto;
 }
 form {
@@ -78,7 +79,7 @@ form {
   border: 1px solid #ccc; 
   width: 75%; 
   margin: 0 auto;
-}
+  
 fieldset {
   border: none;
   padding: 0;
@@ -92,6 +93,7 @@ label {
   display: block;
   margin-top: 15px;
   font-weight: bold;
+}
 }
 button {
   margin-top: 20px;

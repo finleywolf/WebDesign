@@ -1,3 +1,9 @@
+.fascinate-regular {
+  font-family: "Fascinate", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 h1 {
   padding: 35px;
   text-align: center;
@@ -40,12 +46,12 @@ li {
 a {
     color: burlywood
 }
-div {
-    background-color: antiquewhite;
+.chapter {
+    background-color: #FFFAFA;
     padding: 10px;
     border: 5px solid #000000;
     margin-top: 10px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Tahoma, sans-serif;
 }
 
 div h3 {
@@ -123,4 +129,35 @@ th {
   background-color: #f5f5f5;
   font-weight: bold; 
   color: #5a3e36; 
+}
+
+#gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px; 
+        max-width: 600px; 
+        margin: 0 auto;
+    }
+
+    #gallery img {
+        width: 30%;
+        height: auto;
+    }
+
+@media (max-width: 600px) {
+body {
+  font-size: 16px;
+  padding: 10px;
+}
+li {
+  display: block; 
+  margin: 10px 0; 
+}
+nav {
+  text-align: center;
+}
+header, .chapter, footer {
+  padding: 10px;
+}
 }

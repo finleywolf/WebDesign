@@ -1,0 +1,1 @@
+I don't know what I am doing wrong, but I am unable to view my Assignment 4 blog. I enjoyed learing about the flexbox and grid and getting to know them a little better after being introduced to them in the last project. I am just a little lost and confused! They will totally help with organization of future projects.

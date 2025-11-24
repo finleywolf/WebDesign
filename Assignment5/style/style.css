@@ -1,0 +1,132 @@
+.blog-preview {
+display: flex; /* activates Flexbox */
+  flex-direction: row; /* aligns items in a row (default, but explicit is good) */
+  align-items: center; /* vertically centers items within the row */
+  gap: 20px; /* adds space between items */
+
+    max-width: 80%; /* controls total width of the content block */
+  margin: 80px auto; /* centers content on the page with 80px of top/bottom space */
+  padding: 20px 40px; /* adds subtle inner space from edges around content */
+}
+.blog-text {
+     display: flex; /* another flexbox. We can nest them! */
+  flex-direction: column; /* stacks each text element vertically */
+  gap: 10px; /* adds consistent space between elements */
+}
+.blog-preview img {
+  width: 35%;      /* image takes up 45% of the total width of .blog-preview */
+  height: auto;    /* keeps proportions correct */
+  border-radius: 8px; /* optional, softens corners */
+}
+.date {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+}
+
+.post-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.post-preview {
+ font-family: Arial, Helvetica, sans-serif; 
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.read-more {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: #8fafa7;
+  margin-top: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
+  margin: auto; 
+  padding: 10px;
+}
+
+.item {
+ background-color: #fcf9ff; 
+ padding: 80px 20px;
+ border-radius: 8px;
+aspect-ratio: 1/1;
+display: flex;
+justify-content: center;
+}
+.item img {
+  padding: 0;
+  width: 100%; /* makes the image fill the container’s width */
+  height: auto; /* maintains the image's aspect ratio */
+  display: block; /* clears any space after the image */
+  border-radius: 8px; /* optional */
+}
+.item p {
+  text-align: center; /* centers the text horizontally */
+  display: flex; /* turns the <p> into a flex container */
+  align-items: center; /* allows us to center the flex container's content vertically */
+}
+
+nav {
+       background-color: #333;
+    padding: 10px 20px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: pink;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff9800;
+}
+
+.footer {
+  display: flex; /* Places all footer sections (icons + lists) side by side in a row */
+  justify-content: space-between; /* Adds equal space between each section horizontally */
+  align-items: flex-start; /* Aligns all sections to the top of the footer */
+  background-color: #d5d0dd; /* Sets the footer’s background color */
+  padding: 30px 100px; /* Adds space inside the footer: 30px top/bottom, 100px left/right */
+  font-family: Arial, Helvetica, sans-serif; /* Sets the font for the entire footer */
+}
+
+.footer ul {
+  list-style: none; /* Removes the default bullets from list items */
+  padding: 0; /* Removes default padding inside the <ul> */
+  margin: 0; /* Removes default margin outside the <ul> */
+}
+
+.footer li {
+  margin-bottom: 6px; /* Adds a little space between each list item */
+  font-size: 14px; /* Makes the text slightly smaller for a neat footer look */
+}
+
+.social-icons img {
+  width: 22px; /* Sets consistent icon size */
+  margin-right: 10px; /* Adds space between the icons */
+  vertical-align: middle; /* Keeps icons visually aligned with any text nearby */
+}

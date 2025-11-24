@@ -15,8 +15,17 @@
     <header>
       <h1>Visible Title</h1>
     </header>
+
+  <main>
+    <!-- Add this section. Your core content goes here -->
+  </main>
+
     <footer>
-      <!-- Your footer content goes here -->
+      <p>&copy; <span id="year"></span> Your Name</p>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
     </footer>
   </body>
 </html>

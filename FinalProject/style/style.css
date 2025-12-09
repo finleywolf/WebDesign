@@ -1,0 +1,365 @@
+.blog-preview {
+display: flex; /* activates Flexbox */
+  flex-direction: row; /* aligns items in a row (default, but explicit is good) */
+  align-items: center; /* vertically centers items within the row */
+  gap: 20px; /* adds space between items */
+
+    max-width: 80%; /* controls total width of the content block */
+  margin: 80px auto; /* centers content on the page with 80px of top/bottom space */
+  padding: 20px 40px; /* adds subtle inner space from edges around content */
+}
+.blog-text {
+     display: flex; /* another flexbox. We can nest them! */
+  flex-direction: column; /* stacks each text element vertically */
+  gap: 10px; /* adds consistent space between elements */
+}
+.blog-preview img {
+  width: 35%;      /* image takes up 45% of the total width of .blog-preview */
+  height: auto;    /* keeps proportions correct */
+  border-radius: 8px; /* optional, softens corners */
+}
+.date {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+}
+
+.post-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.post-preview {
+ font-family: Arial, Helvetica, sans-serif; 
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.read-more {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: #8fafa7;
+  margin-top: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
+  margin: auto; 
+  padding: 10px;
+}
+
+.item {
+ background-color: #fcf9ff; 
+ padding: 80px 20px;
+ border-radius: 8px;
+aspect-ratio: 1/1;
+display: flex;
+justify-content: center;
+}
+.item img {
+  padding: 0;
+  width: 100%; /* makes the image fill the container’s width */
+  height: auto; /* maintains the image's aspect ratio */
+  display: block; /* clears any space after the image */
+  border-radius: 8px; /* optional */
+}
+.item p {
+  text-align: center; /* centers the text horizontally */
+  display: flex; /* turns the <p> into a flex container */
+  align-items: center; /* allows us to center the flex container's content vertically */
+}
+
+nav {
+       background-color: #333;
+    padding: 10px 20px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: pink;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff9800;
+}
+
+.footer {
+  display: flex; /* Places all footer sections (icons + lists) side by side in a row */
+  justify-content: space-between; /* Adds equal space between each section horizontally */
+  align-items: flex-start; /* Aligns all sections to the top of the footer */
+  background-color: #d5d0dd; /* Sets the footer’s background color */
+  padding: 30px 40px; /* Adds space inside the footer: 30px top/bottom, 100px left/right */
+  font-family: Arial, Helvetica, sans-serif; /* Sets the font for the entire footer */
+}
+
+.footer ul {
+  list-style: none; /* Removes the default bullets from list items */
+  padding: 0; /* Removes default padding inside the <ul> */
+  margin: 0; /* Removes default margin outside the <ul> */
+}
+
+.footer li {
+  margin-bottom: 6px; /* Adds a little space between each list item */
+  font-size: 14px; /* Makes the text slightly smaller for a neat footer look */
+}
+
+.social-icons img {
+  width: 22px; /* Sets consistent icon size */
+  margin-right: 10px; /* Adds space between the icons */
+  vertical-align: middle; /* Keeps icons visually aligned with any text nearby */
+}
+
+@media (max-width: 600px) {
+  /* Styles for mobile screens */
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Styles for tablets */
+}
+
+@media (max-width: 600px) {
+  .card-section{
+    flex-direction: column;
+  }
+}
+
+a:focus, button:focus, input:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.card-section {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / 3; /* spans both columns */
+  grid-row: 2;
+  display: flex;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+  padding: 20px;
+  background-color: gainsboro;
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+.featured-section .post-preview {
+font-size: 0.6rem;
+line-height: 1;
+}
+
+.featured-section .post-title {
+font-size: 0.8rem;
+line-height: 1;
+}
+
+.featured-section .date {
+font-size: 0.5rem;
+}
+
+.featured-section .read-more {
+margin-top: 0px !important; 
+}
+
+.page-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* The featured section */
+.featured-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  align-items: start;
+}
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.featured-section .blog-preview {
+  max-width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  gap: 10px;
+}
+.featured-section .blog-preview {
+  max-width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  gap: 10px;
+}
+.featured-section .blog-preview img {
+  width: 80px;
+}
+
+.featured-section .blog-text {
+font-size: 0.6rem;
+}
+
+.featured-section .post-preview {
+font-size: 0.6rem;
+line-height: 1;
+}
+
+.featured-section .post-title {
+font-size: 0.8rem;
+line-height: 1;
+}
+
+.featured-section .date {
+font-size: 0.5rem;
+}
+
+.featured-section .read-more {
+margin-top: 0px !important; 
+}
+
+.highlight {
+
+}
+
+.carousel-item img {
+  max-height: 680px;
+  object-fit: cover;
+  width: 100%;
+}
+a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+.navbar-brand {
+   transition: transform 0.5s ease;
+} 
+
+.navbar-brand:hover {
+  transform: scale(1.15);
+}
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+
+  background-color: #e0e2e5;
+  padding: 10px;
+}
+/* Popup becomes visible */
+#popup.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+/* Pulse animation on the Sign Up button */
+@keyframes pulse {
+}
+/* Pulse animation on the Sign Up button */
+@keyframes pulse {
+  0% { transform: scale(1); } /* start at regular size   */
+  50% { transform: scale(1.03); } /* grow slightly in middle */
+  100% { transform: scale(1); } /* return to normal size   */
+}
+#openPopup {
+  animation: pulse 3s ease-in-out infinite;
+}
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+/* Parallax Banner */
+.parallax-banner-scroll {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* start position */
+  background-attachment: scroll; /* allow movement */
+  position: relative;
+}
+.parallax-banner {
+  height: 500px;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed; /* parallax */
+  position: relative;
+}
+
+.parallax-banner-overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25); /* optional soft darkening */
+}
+
+.parallax-banner-content {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #faf7e8;
+  text-shadow: 0 0 10px #000;
+}
+@media (max-width: 768px) {
+  .parallax-banner {
+    background-attachment: scroll;
+    height: 320px;
+  }
+
+  .parallax-banner-content h1 {
+    font-size: 2rem;
+  }
+}
+
+
+canvas {
+  display: block;
+  margin: 20px auto;
+}

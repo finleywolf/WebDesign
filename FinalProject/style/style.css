@@ -363,3 +363,9 @@ canvas {
   display: block;
   margin: 20px auto;
 }
+
+.diplomata-regular {
+  font-family: "Diplomata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
